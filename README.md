@@ -1,2 +1,3 @@
 # ExpandableNavigationBar
-A navigation bar that can be expanded by drag
+A navigation bar that can be expanded to show a menu by dragging.
+
