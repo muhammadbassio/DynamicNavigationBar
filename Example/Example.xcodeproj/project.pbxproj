@@ -12,8 +12,8 @@
 		08E29DD5216CBC54005821A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E29DD3216CBC54005821A7 /* Main.storyboard */; };
 		08E29DD7216CBC56005821A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E29DD6216CBC56005821A7 /* Assets.xcassets */; };
 		08E29DDA216CBC56005821A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E29DD8216CBC56005821A7 /* LaunchScreen.storyboard */; };
-		08E29DE3216CBC95005821A7 /* ExpandableNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E29DE2216CBC95005821A7 /* ExpandableNavigationBar.swift */; };
-		08E29DE5216CBF38005821A7 /* ENBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E29DE4216CBF38005821A7 /* ENBViewController.swift */; };
+		08E29DE3216CBC95005821A7 /* DynamicNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E29DE2216CBC95005821A7 /* DynamicNavigationBar.swift */; };
+		08E29DE5216CBF38005821A7 /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E29DE4216CBF38005821A7 /* DynamicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		08E29DD6216CBC56005821A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08E29DD9216CBC56005821A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08E29DDB216CBC56005821A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08E29DE2216CBC95005821A7 /* ExpandableNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableNavigationBar.swift; sourceTree = "<group>"; };
-		08E29DE4216CBF38005821A7 /* ENBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENBViewController.swift; sourceTree = "<group>"; };
+		08E29DE2216CBC95005821A7 /* DynamicNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicNavigationBar.swift; sourceTree = "<group>"; };
+		08E29DE4216CBF38005821A7 /* DynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		08E29DCE216CBC54005821A7 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				08E29DE1216CBC79005821A7 /* ExpandableNavigationBar */,
+				08E29DE1216CBC79005821A7 /* DynamicNavigationBar */,
 				08E29DCF216CBC54005821A7 /* AppDelegate.swift */,
 				08E29DD1216CBC54005821A7 /* ViewController.swift */,
 				08E29DD3216CBC54005821A7 /* Main.storyboard */,
@@ -69,13 +69,13 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		08E29DE1216CBC79005821A7 /* ExpandableNavigationBar */ = {
+		08E29DE1216CBC79005821A7 /* DynamicNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				08E29DE2216CBC95005821A7 /* ExpandableNavigationBar.swift */,
-				08E29DE4216CBF38005821A7 /* ENBViewController.swift */,
+				08E29DE2216CBC95005821A7 /* DynamicNavigationBar.swift */,
+				08E29DE4216CBF38005821A7 /* DynamicViewController.swift */,
 			);
-			path = ExpandableNavigationBar;
+			path = DynamicNavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +151,8 @@
 			files = (
 				08E29DD2216CBC54005821A7 /* ViewController.swift in Sources */,
 				08E29DD0216CBC54005821A7 /* AppDelegate.swift in Sources */,
-				08E29DE5216CBF38005821A7 /* ENBViewController.swift in Sources */,
-				08E29DE3216CBC95005821A7 /* ExpandableNavigationBar.swift in Sources */,
+				08E29DE5216CBF38005821A7 /* DynamicViewController.swift in Sources */,
+				08E29DE3216CBC95005821A7 /* DynamicNavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X236AS6W4J;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X236AS6W4J;
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
