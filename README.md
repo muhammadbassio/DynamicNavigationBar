@@ -5,9 +5,45 @@ A navigation bar that can be expanded to show a more content by dragging.
 
 
 
+## Requirements
+
+- iOS 11.0+
+- Xcode 10.0
+- Swift 4.2
+
+## 
+
 ## Installation
 
-#### Manual
+##### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+    pod 'DynamicNavigationBar'
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+
+
+##### Manual
 
 Drag the folder "DynamicNavigationBar" to your Xcode project
 
