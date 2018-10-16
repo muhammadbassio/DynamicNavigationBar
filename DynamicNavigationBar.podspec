@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DynamicNavigationBar'
   s.version          = '1.0'
-  s.summary          = 'A navigation bar that can be expanded by drag.'
+  s.summary          = 'A navigation bar that can be expanded by drag'
  
   s.description      = <<-DESC
 A navigation bar that can be expanded by drag.
