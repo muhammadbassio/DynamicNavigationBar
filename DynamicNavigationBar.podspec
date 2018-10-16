@@ -14,5 +14,6 @@ A navigation bar that can be expanded by drag.
  
   s.ios.deployment_target = '11.0'
   s.source_files = 'Example/Example/DynamicNavigationBar/*.swift'
+  s.swift_version = '4.2'
  
 end
