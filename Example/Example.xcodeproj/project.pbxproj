@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08B3AA7B2176121C0020373C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B3AA7A2176121C0020373C /* StoreKit.framework */; };
 		08E29DD0216CBC54005821A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E29DCF216CBC54005821A7 /* AppDelegate.swift */; };
 		08E29DD2216CBC54005821A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E29DD1216CBC54005821A7 /* ViewController.swift */; };
 		08E29DD5216CBC54005821A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08E29DD3216CBC54005821A7 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08B3AA78217612120020373C /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
+		08B3AA7A2176121C0020373C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		08E29DCC216CBC54005821A7 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E29DCF216CBC54005821A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08E29DD1216CBC54005821A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +36,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08B3AA7B2176121C0020373C /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08B3AA792176121C0020373C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08B3AA7A2176121C0020373C /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		08E29DC3216CBC54005821A7 = {
 			isa = PBXGroup;
 			children = (
 				08E29DCE216CBC54005821A7 /* Example */,
 				08E29DCD216CBC54005821A7 /* Products */,
+				08B3AA792176121C0020373C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +71,7 @@
 		08E29DCE216CBC54005821A7 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				08B3AA78217612120020373C /* Example.entitlements */,
 				08E29DE1216CBC79005821A7 /* DynamicNavigationBar */,
 				08E29DCF216CBC54005821A7 /* AppDelegate.swift */,
 				08E29DD1216CBC54005821A7 /* ViewController.swift */,
@@ -110,6 +124,14 @@
 				TargetAttributes = {
 					08E29DCB216CBC54005821A7 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -298,15 +320,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X236AS6W4J;
+				DEVELOPMENT_TEAM = ADY83YFFM5;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.bassio.libs.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = io.houseofcode.mosson.staging1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -317,15 +340,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X236AS6W4J;
+				DEVELOPMENT_TEAM = ADY83YFFM5;
 				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.bassio.libs.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = io.houseofcode.mosson.staging1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

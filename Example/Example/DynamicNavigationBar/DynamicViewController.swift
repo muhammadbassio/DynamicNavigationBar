@@ -6,7 +6,7 @@
 
 import UIKit
 
-class DynamicViewController: UIViewController, UIScrollViewDelegate {
+open class DynamicViewController: UIViewController, UIScrollViewDelegate {
   
   static var ScrollThreshold:CGFloat = 100
   

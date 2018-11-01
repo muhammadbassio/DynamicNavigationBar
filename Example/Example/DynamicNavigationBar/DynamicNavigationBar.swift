@@ -6,7 +6,7 @@
 
 import UIKit
 
-class DynamicNavigationBar: UIView {
+open class DynamicNavigationBar: UIView {
   var menuView: UIView?
   var barView: UIView?
   var overlayButton: UIButton?
