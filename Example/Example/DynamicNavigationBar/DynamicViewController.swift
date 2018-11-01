@@ -10,14 +10,14 @@ open class DynamicViewController: UIViewController, UIScrollViewDelegate {
   
   static var ScrollThreshold:CGFloat = 100
   
-  @IBOutlet var barHeightConstraint: NSLayoutConstraint?
-  @IBOutlet var viewTopConstraint: NSLayoutConstraint?
-  @IBOutlet var navigationBar: DynamicNavigationBar?
-  @IBOutlet var menuView: UIView?
-  @IBOutlet var navigationBarView: UIView?
-  @IBOutlet var overlayButton: UIButton?
+  @IBOutlet public var barHeightConstraint: NSLayoutConstraint?
+  @IBOutlet public var viewTopConstraint: NSLayoutConstraint?
+  @IBOutlet public var navigationBar: DynamicNavigationBar?
+  @IBOutlet public var menuView: UIView?
+  @IBOutlet public var navigationBarView: UIView?
+  @IBOutlet public var overlayButton: UIButton?
   
-  @IBInspectable var navigationBarMinHeight:CGFloat = 44 {
+  @IBInspectable public var navigationBarMinHeight:CGFloat = 44 {
     didSet {
       if self.navigationBarMinHeight > self.navigationBarMaxHeight {
         self.navigationBarMaxHeight = self.navigationBarMinHeight
@@ -30,7 +30,7 @@ open class DynamicViewController: UIViewController, UIScrollViewDelegate {
     }
   }
   
-  @IBInspectable var navigationBarMaxHeight:CGFloat = 80 {
+  @IBInspectable public var navigationBarMaxHeight:CGFloat = 80 {
     didSet {
       if self.navigationBarMinHeight > self.navigationBarMaxHeight {
         self.navigationBarMinHeight = self.navigationBarMaxHeight
@@ -43,9 +43,9 @@ open class DynamicViewController: UIViewController, UIScrollViewDelegate {
     }
   }
   
-  @IBInspectable var menuCornerRadius: CGFloat = 15
+  @IBInspectable public var menuCornerRadius: CGFloat = 15
   
-  @IBInspectable var navigationBarExtensionHeight:CGFloat = 60 {
+  @IBInspectable public var navigationBarExtensionHeight:CGFloat = 60 {
     didSet {
       if self.navigationBarExtensionHeight != 0 {
         if self.navigationBarExtensionHeight > 0 {
@@ -60,7 +60,7 @@ open class DynamicViewController: UIViewController, UIScrollViewDelegate {
   }
   
   
-  var isDragging = false
+  public var isDragging = false
   
   open override func viewDidLoad() {
     super.viewDidLoad()

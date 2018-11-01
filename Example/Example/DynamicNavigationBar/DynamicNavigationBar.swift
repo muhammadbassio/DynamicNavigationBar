@@ -7,9 +7,9 @@
 import UIKit
 
 open class DynamicNavigationBar: UIView {
-  var menuView: UIView?
-  var barView: UIView?
-  var overlayButton: UIButton?
+  public var menuView: UIView?
+  public var barView: UIView?
+  public var overlayButton: UIButton?
   
   func updateState(percentage:CGFloat, radius:CGFloat) {
     let newAlpha = (percentage > 1) ? 1 : ((percentage < 0) ? 0 : percentage)
