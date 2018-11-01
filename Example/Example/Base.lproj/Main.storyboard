@@ -131,6 +131,12 @@
                         <userDefinedRuntimeAttribute type="number" keyPath="navigationBarExtensionHeight">
                             <real key="value" value="400"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="navigationBarMaxHeight">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="navigationBarMinHeight">
+                            <real key="value" value="44"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="barHeightConstraint" destination="bHn-iY-86B" id="1Qh-ZE-AAv"/>

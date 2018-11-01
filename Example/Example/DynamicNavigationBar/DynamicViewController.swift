@@ -108,8 +108,8 @@ open class DynamicViewController: UIViewController, UIScrollViewDelegate {
           self.barHeightConstraint?.constant = self.navigationBarMaxHeight - offset
           self.viewTopConstraint?.constant = self.navigationBarMaxHeight - offset
         } else {
-          self.barHeightConstraint?.constant = diff
-          self.viewTopConstraint?.constant = diff
+          self.barHeightConstraint?.constant = self.navigationBarMinHeight
+          self.viewTopConstraint?.constant = self.navigationBarMinHeight
         }
         self.view.layoutIfNeeded()
         self.navigationBar?.hideMenu()
@@ -133,8 +133,8 @@ open class DynamicViewController: UIViewController, UIScrollViewDelegate {
         self.barHeightConstraint?.constant = self.navigationBarMaxHeight - offset
         self.viewTopConstraint?.constant = self.navigationBarMaxHeight - offset
       } else {
-        self.barHeightConstraint?.constant = diff
-        self.viewTopConstraint?.constant = diff
+        self.barHeightConstraint?.constant = self.navigationBarMinHeight
+        self.viewTopConstraint?.constant = self.navigationBarMinHeight
       }
     }
   }
