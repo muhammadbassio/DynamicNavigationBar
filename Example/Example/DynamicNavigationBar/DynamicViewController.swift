@@ -62,7 +62,7 @@ open class DynamicViewController: UIViewController, UIScrollViewDelegate {
   
   var isDragging = false
   
-  override func viewDidLoad() {
+  open override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationBar?.barView = self.navigationBarView
     self.navigationBar?.menuView = self.menuView
@@ -80,11 +80,11 @@ open class DynamicViewController: UIViewController, UIScrollViewDelegate {
     }
   }
   
-  func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+  open func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
     self.isDragging = true
   }
   
-  func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+  open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
     self.isDragging = false
     let offset = scrollView.contentOffset.y
     
@@ -117,7 +117,7 @@ open class DynamicViewController: UIViewController, UIScrollViewDelegate {
     }
   }
   
-  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+  open func scrollViewDidScroll(_ scrollView: UIScrollView) {
     let offset = scrollView.contentOffset.y
     if offset <= 0 {
       if self.isDragging {
